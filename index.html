@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaScript demo</title>
+		
+		<!-- add the link tag to the style.css which will be in a folder -->
+		<link rel="stylesheet" href="stylesheet/styles.css">	  
+	  
+		<!-- used to embed client side script/JS -->
+		<script type="text/javascript">
+			//comment in JS
+			//add 3 examples of javascript
+			
+			//Example 1
+			//Sum and product of three numbers
+			var sum = 0;
+			var product = 1;
+			
+			for(var i = 0; i < 3; i++){
+				var num1 = parseInt(prompt("Enter the number"));
+				sum += num1;
+				product *= num1;
+			}
+			
+			alert("Sum is " + sum);
+			alert("Product is " + product);
+			
+			
+			
+			//Example 2
+			//Function to find the highest number
+			
+			function max(){
+				var max_num;
+				var num2;
+				var x = parseInt(prompt("Enter the number of numbers you would like to enter"));
+				var i = 0;
+				while (i < x){
+					num2 = parseInt(prompt("Enter the number"));
+					if ((i == 0) || (num2 > max_num)){
+						max_num = num2;
+						}
+					i = i + 1;
+				}
+				alert("Highest number entered was: " + max_num);
+			}
+			//Calling the function
+			max();
+			
+			
+			//Example 3
+			//Quotient  and Remainder of two numbers
+			var dividend = parseInt(prompt("Enter the dividend"));
+			var divisor = parseInt(prompt("Enter the divisor"));
+			
+			var quotient = parseInt(dividend/divisor);
+			var reminder = dividend%divisor;
+			
+			alert("The qoutient is: " + quotient);
+			
+			if ((dividend%divisor)!= 0){
+				alert("The reminder is: " + reminder);
+			}
+
+				
+		</script>
+	  	  
+	</head>
+	<body>
+		<h1>Graded lab exercise</h1>
+		<p>add 3 examples of javascript</p>
+		<p>create a repo in github and add your project when finished</p>
+		<p>post just the link to the github repo in OneNote</p>
+		<p>you link should look like this https://github/username/repoName.git </p>
+	</body>
+</html>
